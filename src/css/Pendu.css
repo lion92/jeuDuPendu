@@ -1,0 +1,167 @@
+.pendu-container {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pendu-drawing {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+/* Base */
+.base {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 150px;
+    height: 10px;
+    background-color: #333;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+.base.visible {
+    visibility: visible;
+}
+
+/* Poteau */
+.pole {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 10px;
+    height: 200px;
+    background-color: #333;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+.pole.visible {
+    visibility: visible;
+}
+
+/* Barre transversale */
+.beam {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    background-color: #333;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+.beam.visible {
+    visibility: visible;
+}
+
+/* Corde */
+.rope {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    background-color: #333;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+.rope.visible {
+    visibility: visible;
+}
+
+/* Tête */
+.head {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #f0a500;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+.head.visible {
+    visibility: visible;
+}
+
+/* Corps */
+.body {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 10px;
+    height: 70px;
+    background-color: #f0a500;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+.body.visible {
+    visibility: visible;
+}
+
+/* Bras gauche */
+.left-arm {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    background-color: #f0a500;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: right;
+    visibility: hidden;
+}
+.left-arm.visible {
+    visibility: visible;
+}
+
+/* Bras droit */
+.right-arm {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    background-color: #f0a500;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: left;
+    visibility: hidden;
+}
+.right-arm.visible {
+    visibility: visible;
+}
+
+/* Jambe gauche */
+.left-leg {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    background-color: #f0a500;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: right;
+    visibility: hidden;
+}
+.left-leg.visible {
+    visibility: visible;
+}
+
+/* Jambe droite */
+.right-leg {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    background-color: #f0a500;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: left;
+    visibility: hidden;
+}
+.right-leg.visible {
+    visibility: visible;
+}

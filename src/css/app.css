@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Dégradé bleu-violet */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    color: #ffffff; /* Texte blanc par défaut */
+}
+
+.App {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Boutons */
+button {
+    background-color: #ffffff; /* Boutons blancs */
+    color: #2575fc; /* Texte bleu */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2575fc; /* Fond bleu au survol */
+    color: #ffffff; /* Texte blanc au survol */
+}
+
+/* Input */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffffff; /* Bord blanc */
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+    border-radius: 5px;
+    color: #ffffff; /* Texte blanc */
+    margin-right: 10px;
+}
+
+input::placeholder {
+    color: #cccccc; /* Placeholder gris clair */
+}
+
+/* Status */
+.loss {
+    color: #ff4d4f; /* Rouge pour une perte */
+    font-weight: bold;
+}
+
+.win {
+    color: #4caf50; /* Vert pour une victoire */
+    font-weight: bold;
+}
+
+/* Pendu */
+.pendu-drawing {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.base {
+    background-color: #ffffff; /* Blanc */
+}
+
+.pole,
+.beam,
+.rope,
+.head,
+.body,
+.left-arm,
+.right-arm,
+.left-leg,
+.right-leg {
+    background-color: #ffffff; /* Blanc */
+}
+
+/* Animation d'apparition */
+.visible {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
